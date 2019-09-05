@@ -1,8 +1,13 @@
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute', 'ngAria']);
 
 /// Routes ///
 myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   console.log('myApp -- config')
+
+
+
+
+
   $routeProvider
     .when('/', {
       redirectTo: 'home'
