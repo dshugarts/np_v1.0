@@ -11,6 +11,10 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
       templateUrl: '/views/templates/home.html',
       controller: 'HomeController as vm',
     })
+    .when('/dashboard', {
+      templateUrl: '/views/templates/dashboard.html',
+      controller: 'HomeController as vm',
+    })
     .otherwise({
       template: '<h1>404</h1>'
     });
